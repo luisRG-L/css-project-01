@@ -1,0 +1,39 @@
+@import "tailwindcss";
+
+.grid-cols-custom {
+  grid-template-columns: 2fr 1fr 1fr;
+}
+
+.bg-custom {
+  background-color: #a9d6cb;
+}
+
+* {
+  transition: all 0.3s ease-in-out;
+}
+
+#menu-toogle:checked ~ div#mobile-menu {
+  display: flex !important;
+}
+
+@keyframes change {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(180deg);
+  }
+}
+
+#menu-toogle:checked + div label #menu {
+  display: none !important;
+}
+
+#menu-toogle:checked + div label #X {
+  animation: change 0.5s forwards;
+  display: block !important;
+}
+
+#menu {
+  animation: change 0.5s backwards;
+}

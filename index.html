@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./css/style.css" />
+    <title>GlowQueen</title>
+  </head>
+  <body class="md:overflow-y-hidden overflow-x-hidden">
+    <header class="md:pl-20 px-5 py-5">
+      <nav class="md:flex md:flex-row md:align-center md:justify-between z-10">
+        <input type="checkbox" id="menu-toogle" class="peer hidden"></input>
+        <div id="nav-part-1" class="flex justify-between max-sm:w-full">
+          <span class="text-xl font-semibold"
+            ><span class="text-blue-950">Glow</span
+            ><span class="text-emerald-300">Queen</span></span
+          ><label
+          for="menu-toogle"
+          id="open-close"
+          class="block md:hidden w-8 h-8 cursor-pointer relative peer"
+        >
+          <img src="./public/menu.svg" alt="" id="menu" class="w-full h-full" />
+          <img
+            src="./public/x.svg"
+            alt=""
+            id="X"
+            class="hidden w-full h-full"
+          />
+        </label>
+        </div>
+        <!-- Navbars desktop -->
+        <div
+          id="nav-part-2"
+          class="hidden md:flex flex-col md:flex-row gap-8 items-center justify-center my-auto"
+        >
+          <a
+            href="#"
+            class="text-blue-950 text-sm cursor-pointer hover:text-blue-800 transition-all hover:underline"
+          >
+            Home
+          </a>
+          <a
+            href="#"
+            class="text-blue-950 text-sm cursor-pointer hover:text-blue-800 transition-all hover:underline"
+            >About</a
+          >
+          <a
+            href="#"
+            class="text-blue-950 text-sm cursor-pointer hover:text-blue-800 transition-all hover:underline"
+            >Services</a
+          >
+          <a
+            href="#"
+            class="text-blue-950 text-sm cursor-pointer hover:text-blue-800 transition-all hover:underline"
+            >Facilities</a
+          >
+          <a
+            href="#"
+            class="text-blue-950 text-sm cursor-pointer hover:text-blue-800 transition-all hover:underline"
+            >More&#9660;</a
+          >
+        </div>
+        <div
+          id="nav-part-3"
+          class="hidden md:flex flex-row gap-8 justify-center align-center my-auto"
+        >
+          <a href="#" class="text-blue-950 text-sm"
+            ><img
+              src="./public/search.svg"
+              alt="Search"
+              class="hover:scale-110 active:scale-90"
+          /></a>
+          <a href="#" class="text-blue-950 text-sm"
+            ><img
+              src="./public/shopping-bag.svg"
+              alt="Shop"
+              class="hover:scale-110 active:scale-90"
+          /></a>
+          <a
+            href="#"
+            class="text-blue-950 text-sm hover:text-blue-800 transition-all hover:underline"
+            >Sign In</a
+          >
+          <a
+            href="#"
+            class="bg-blue-950 text-white text-sm py-2 px-5 rounded-3xl transition-all hover:scale-110 hover:bg-blue-900 active:scale-90"
+            >Sing Up
+          </a>
+        </div>
+        <!-- navbar mobile -->
+         <div class="hidden md:hidden mobile-menu w-full" id="mobile-menu">
+          <div
+            id="nav-mobile"
+            class="flex flex-col gap-4 items-center justify-center my-auto w-full"
+          >
+            <a
+              href="#"
+              class="text-center text-blue-950 w-full text-sm cursor-pointer hover:text-blue-800 transition-all hover:underline hover:bg-gray-100 rounded"
+            >
+              Home
+            </a>
+            <a
+              href="#"
+              class="text-center text-blue-950 w-full text-sm cursor-pointer hover:text-blue-800 transition-all hover:underline hover:bg-gray-100 rounded"
+              >About</a
+            >
+            <a
+              href="#"
+              class="text-center text-blue-950 w-full text-sm cursor-pointer hover:text-blue-800 transition-all hover:underline hover:bg-gray-100 rounded"
+              >Services</a
+            >
+            <a hover:bg-gray-100 rounded
+              href="#"
+              class="text-center text-blue-950 w-full text-sm cursor-pointer hover:text-blue-800 transition-all hover:underline hover:bg-gray-100 rounded"
+              >Facilities</a
+            >
+            <a
+              href="#"
+              class="text-center text-blue-950 w-full text-sm cursor-pointer hover:text-blue-800 transition-all hover:underline hover:bg-gray-100 rounded"
+              >More&#9660;</a
+            >
+            <di class="flex flex-row gap-4 items-center justify-center my-auto w-full">
+              <a href="#" class="px-4 text-blue-950 text-sm">
+                <img
+                  src="./public/search.svg"
+                  alt="Search"
+                  class="hover:scale-110 active:scale-90"
+                />
+              </a>
+              <a href="#" class="py-2 px-4 text-blue-950 text-sm"
+                ><img
+                  src="./public/shopping-bag.svg"
+                  alt="Shop"
+                  class="hover:scale-110 active:scale-90"
+              /></a>
+              <a href="#" class="py-2 px-4 text-blue-950">Sign In</a>
+              <a
+                href="#"
+                class="bg-blue-950 text-white text-sm py-2 px-5 rounded-3xl transition-all hover:scale-110 hover:bg-blue-900 active:scale-90"
+                >Sing Up
+              </a>
+            </di>
+         </div>
+        
+      </nav>
+      <main class="md:grid grid-cols-custom grid-rows-1 gap-15 md:mt-20 z-2">
+        <div id="right">
+          <h1 class="text-blue-950 font-bold text-5xl flex flex-wrap mb-5">
+            Bring back the beauty and glow of your skin
+          </h1>
+          <p class="text-gray-500 my-10">
+            We provide you various treatments from head to toe using the best
+            product, advanced technology, and affordable price
+          </p>
+          <div class="flex flex-row items-center gap-10">
+            <button
+              class="bg-blue-950 text-white px-4 py-2 rounded-4xl text-sm cursor-pointer transition-all hover:bg-blue-900 hover:scale-110 active:scale-90"
+              id="book-now"
+            >
+              Book Now
+            </button>
+            <div
+              id="watch-video"
+              class="flex items-center justify-center gap-1.5"
+            >
+              <input
+                type="image"
+                src="./public/right-arrow.svg"
+                style="box-shadow: rgba(0, 0, 0, 0.2) 0px 0px 5px"
+                class="rounded-2xl p-1.5 transition-all hover:scale-110 active:scale-90"
+              />
+              <span class="text-xs text-blue-950">Watch Video</span>
+            </div>
+          </div>
+          <div class="grid grid-cols-3 grid-rows-1 gap-10 my-10 w-[90%] px-10">
+            <article
+              class="flex flex-col gap-3 items-center jusify-center flex-wrap text-center"
+            >
+              <img
+                src="./public/face.svg"
+                alt="Face"
+                width="40"
+                class="bg-emerald-200 rounded-full p-1"
+              />
+              <span class="text-2xl text-blue-950 font-medium">15+</span>
+              <span class="text-gray-500 text-sm">Special Treatment</span>
+            </article>
+            <article
+              class="flex flex-col gap-3 items-center jusify-center flex-wrap text-center"
+            >
+              <img
+                src="./public/lotus.svg"
+                alt="Lotus"
+                width="40"
+                class="bg-emerald-200 rounded-full p-1"
+              />
+              <span class="text-2xl text-blue-950 font-medium">25+</span>
+              <span class="text-gray-500 text-sm">Professional Therapist</span>
+            </article>
+            <article
+              class="flex flex-col gap-3 items-center jusify-center flex-wrap text-center"
+            >
+              <img
+                src="./public/mortar.svg"
+                alt="Mortar"
+                width="40"
+                class="bg-emerald-200 rounded-full p-1"
+              />
+              <span class="text-2xl text-blue-950 font-medium">100%</span>
+              <span class="text-gray-500 text-sm">Herbal Cream Formula</span>
+            </article>
+          </div>
+        </div>
+      </main>
+      <div
+        id="bg"
+        class="fixed bg-custom w-[33%] h-[70%] top-0 right-0 -z-3 hidden md:block"
+      >
+        <img
+          src="./public/vector.svg"
+          alt=""
+          class="fixed -z-2 right-45 top-15"
+          width="350"
+        />
+      </div>
+      <img
+        src="./public/woman.png"
+        alt=""
+        class="md:w-[9] md:h-full md:fixed top-0 right-20 -z-2"
+      />
+      <div id="testimonies">
+        <article
+          class="flex flex-col gap-1 md:fixed backdrop-blur-md z-3 top-60 right-10 bg-white/45 p-5 rounded-xl w-75"
+        >
+          <img src="./public/“.svg" alt="" class="z-0" width="20" />
+          <p class="flex flex-wrap text-sm">
+            I have a regular schedule to take treatment from GlowQueen, they
+            gave me the best service and treatment ever to maintain the beauty
+            and health of my skin
+          </p>
+          <strong class="font-bold text-sm text-blue-950"
+            >Sophia princeton</strong
+          >
+        </article>
+        <article
+          class="flex flex-col gap-1 md:fixed backdrop-blur-md z-3 top-110 right-50 bg-white/45 p-5 rounded-xl w-75"
+        >
+          <img src="./public/“.svg" alt="" class="z-0" width="20" />
+          <p class="flex flex-wrap text-sm">
+            For the past few years, I've had a hard time finding the right place
+            for skin care to deal with my complicated skin condition, thank God
+            I found GlowQueen to treat my skin
+          </p>
+          <strong class="font-bold text-sm text-blue-950">Tamara Jules</strong>
+        </article>
+      </div>
+    </header>
+  </body>
+</html>
