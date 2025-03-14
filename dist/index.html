@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>GlowQueen</title>
+    <link rel="stylesheet" crossorigin href="/assets/index-E3vvBeij.css">
+  </head>
+  <body class="md:overflow-y-hidden overflow-x-hidden">
+    <header class="md:pl-20 px-5 py-5">
+      <nav class="md:flex md:flex-row md:align-center md:justify-between z-10">
+        <input type="checkbox" id="menu-toogle" class="peer hidden"></input>
+        <div id="nav-part-1" class="flex justify-between max-sm:w-full">
+          <span class="text-xl font-semibold"
+            ><span class="text-blue-950">Glow</span
+            ><span class="text-emerald-300">Queen</span></span
+          ><label
+          for="menu-toogle"
+          id="open-close"
+          class="block md:hidden w-8 h-8 cursor-pointer relative peer"
+        >
+          <img src="data:image/svg+xml,%3csvg%20xmlns='http://www.w3.org/2000/svg'%20width='24'%20height='24'%20viewBox='0%200%2024%2024'%20style='fill:%20rgba(0,%200,%200,%201);transform:%20;msFilter:;'%3e%3cpath%20d='M4%206h16v2H4zm0%205h16v2H4zm0%205h16v2H4z'%3e%3c/path%3e%3c/svg%3e" alt="" id="menu" class="w-full h-full" />
+          <img
+            src="data:image/svg+xml,%3csvg%20xmlns='http://www.w3.org/2000/svg'%20width='24'%20height='24'%20viewBox='0%200%2024%2024'%20style='fill:%20rgba(0,%200,%200,%201);transform:%20;msFilter:;'%3e%3cpath%20d='m16.192%206.344-4.243%204.242-4.242-4.242-1.414%201.414L10.535%2012l-4.242%204.242%201.414%201.414%204.242-4.242%204.243%204.242%201.414-1.414L13.364%2012l4.242-4.242z'%3e%3c/path%3e%3c/svg%3e"
+            alt=""
+            id="X"
+            class="hidden w-full h-full"
+          />
+        </label>
+        </div>
+        <!-- Navbars desktop -->
+        <div
+          id="nav-part-2"
+          class="hidden md:flex flex-col md:flex-row gap-8 items-center justify-center my-auto"
+        >
+          <a
+            href="#"
+            class="text-blue-950 text-sm cursor-pointer hover:text-blue-800 transition-all hover:underline"
+          >
+            Home
+          </a>
+          <a
+            href="#"
+            class="text-blue-950 text-sm cursor-pointer hover:text-blue-800 transition-all hover:underline"
+            >About</a
+          >
+          <a
+            href="#"
+            class="text-blue-950 text-sm cursor-pointer hover:text-blue-800 transition-all hover:underline"
+            >Services</a
+          >
+          <a
+            href="#"
+            class="text-blue-950 text-sm cursor-pointer hover:text-blue-800 transition-all hover:underline"
+            >Facilities</a
+          >
+          <a
+            href="#"
+            class="text-blue-950 text-sm cursor-pointer hover:text-blue-800 transition-all hover:underline"
+            >More&#9660;</a
+          >
+        </div>
+        <div
+          id="nav-part-3"
+          class="hidden md:flex flex-row gap-8 justify-center align-center my-auto"
+        >
+          <a href="#" class="text-blue-950 text-sm"
+            ><img
+              src="data:image/svg+xml,%3csvg%20xmlns='http://www.w3.org/2000/svg'%20width='24'%20height='24'%20viewBox='0%200%2024%2024'%20style='fill:%20rgba(0,%200,%200,%201);transform:%20;msFilter:;'%3e%3cpath%20d='M10%2018a7.952%207.952%200%200%200%204.897-1.688l4.396%204.396%201.414-1.414-4.396-4.396A7.952%207.952%200%200%200%2018%2010c0-4.411-3.589-8-8-8s-8%203.589-8%208%203.589%208%208%208zm0-14c3.309%200%206%202.691%206%206s-2.691%206-6%206-6-2.691-6-6%202.691-6%206-6z'%3e%3c/path%3e%3c/svg%3e"
+              alt="Search"
+              class="hover:scale-110 active:scale-90"
+          /></a>
+          <a href="#" class="text-blue-950 text-sm"
+            ><img
+              src="data:image/svg+xml,%3csvg%20xmlns='http://www.w3.org/2000/svg'%20width='24'%20height='24'%20viewBox='0%200%2024%2024'%20style='fill:%20rgba(0,%200,%200,%201);transform:%20;msFilter:;'%3e%3cpath%20d='M5%2022h14c1.103%200%202-.897%202-2V9a1%201%200%200%200-1-1h-3V7c0-2.757-2.243-5-5-5S7%204.243%207%207v1H4a1%201%200%200%200-1%201v11c0%201.103.897%202%202%202zM9%207c0-1.654%201.346-3%203-3s3%201.346%203%203v1H9V7zm-4%203h2v2h2v-2h6v2h2v-2h2l.002%2010H5V10z'%3e%3c/path%3e%3c/svg%3e"
+              alt="Shop"
+              class="hover:scale-110 active:scale-90"
+          /></a>
+          <a
+            href="#"
+            class="text-blue-950 text-sm hover:text-blue-800 transition-all hover:underline"
+            >Sign In</a
+          >
+          <a
+            href="#"
+            class="bg-blue-950 text-white text-sm py-2 px-5 rounded-3xl transition-all hover:scale-110 hover:bg-blue-900 active:scale-90"
+            >Sing Up
+          </a>
+        </div>
+        <!-- navbar mobile -->
+         <div class="hidden md:hidden mobile-menu w-full" id="mobile-menu">
+          <div
+            id="nav-mobile"
+            class="flex flex-col gap-4 items-center justify-center my-auto w-full"
+          >
+            <a
+              href="#"
+              class="text-center text-blue-950 w-full text-sm cursor-pointer hover:text-blue-800 transition-all hover:underline hover:bg-gray-100 rounded"
+            >
+              Home
+            </a>
+            <a
+              href="#"
+              class="text-center text-blue-950 w-full text-sm cursor-pointer hover:text-blue-800 transition-all hover:underline hover:bg-gray-100 rounded"
+              >About</a
+            >
+            <a
+              href="#"
+              class="text-center text-blue-950 w-full text-sm cursor-pointer hover:text-blue-800 transition-all hover:underline hover:bg-gray-100 rounded"
+              >Services</a
+            >
+            <a hover:bg-gray-100 rounded
+              href="#"
+              class="text-center text-blue-950 w-full text-sm cursor-pointer hover:text-blue-800 transition-all hover:underline hover:bg-gray-100 rounded"
+              >Facilities</a
+            >
+            <a
+              href="#"
+              class="text-center text-blue-950 w-full text-sm cursor-pointer hover:text-blue-800 transition-all hover:underline hover:bg-gray-100 rounded"
+              >More&#9660;</a
+            >
+            <di class="flex flex-row gap-4 items-center justify-center my-auto w-full">
+              <a href="#" class="px-4 text-blue-950 text-sm">
+                <img
+                  src="data:image/svg+xml,%3csvg%20xmlns='http://www.w3.org/2000/svg'%20width='24'%20height='24'%20viewBox='0%200%2024%2024'%20style='fill:%20rgba(0,%200,%200,%201);transform:%20;msFilter:;'%3e%3cpath%20d='M10%2018a7.952%207.952%200%200%200%204.897-1.688l4.396%204.396%201.414-1.414-4.396-4.396A7.952%207.952%200%200%200%2018%2010c0-4.411-3.589-8-8-8s-8%203.589-8%208%203.589%208%208%208zm0-14c3.309%200%206%202.691%206%206s-2.691%206-6%206-6-2.691-6-6%202.691-6%206-6z'%3e%3c/path%3e%3c/svg%3e"
+                  alt="Search"
+                  class="hover:scale-110 active:scale-90"
+                />
+              </a>
+              <a href="#" class="py-2 px-4 text-blue-950 text-sm"
+                ><img
+                  src="data:image/svg+xml,%3csvg%20xmlns='http://www.w3.org/2000/svg'%20width='24'%20height='24'%20viewBox='0%200%2024%2024'%20style='fill:%20rgba(0,%200,%200,%201);transform:%20;msFilter:;'%3e%3cpath%20d='M5%2022h14c1.103%200%202-.897%202-2V9a1%201%200%200%200-1-1h-3V7c0-2.757-2.243-5-5-5S7%204.243%207%207v1H4a1%201%200%200%200-1%201v11c0%201.103.897%202%202%202zM9%207c0-1.654%201.346-3%203-3s3%201.346%203%203v1H9V7zm-4%203h2v2h2v-2h6v2h2v-2h2l.002%2010H5V10z'%3e%3c/path%3e%3c/svg%3e"
+                  alt="Shop"
+                  class="hover:scale-110 active:scale-90"
+              /></a>
+              <a href="#" class="py-2 px-4 text-blue-950">Sign In</a>
+              <a
+                href="#"
+                class="bg-blue-950 text-white text-sm py-2 px-5 rounded-3xl transition-all hover:scale-110 hover:bg-blue-900 active:scale-90"
+                >Sing Up
+              </a>
+            </di>
+         </div>
+        
+      </nav>
+      <main class="md:grid grid-cols-custom grid-rows-1 gap-15 md:mt-20 z-2">
+        <div id="right">
+          <h1 class="text-blue-950 font-bold text-5xl flex flex-wrap mb-5">
+            Bring back the beauty and glow of your skin
+          </h1>
+          <p class="text-gray-500 my-10">
+            We provide you various treatments from head to toe using the best
+            product, advanced technology, and affordable price
+          </p>
+          <div class="flex flex-row items-center gap-10">
+            <button
+              class="bg-blue-950 text-white px-4 py-2 rounded-4xl text-sm cursor-pointer transition-all hover:bg-blue-900 hover:scale-110 active:scale-90"
+              id="book-now"
+            >
+              Book Now
+            </button>
+            <div
+              id="watch-video"
+              class="flex items-center justify-center gap-1.5"
+            >
+              <input
+                type="image"
+                src="data:image/svg+xml,%3csvg%20xmlns='http://www.w3.org/2000/svg'%20width='18'%20height='18'%20viewBox='0%200%2024%2024'%20style='fill:%20rgba(38,%2064,%20101,%201);transform:%20;msFilter:;'%3e%3cpath%20d='M5.536%2021.886a1.004%201.004%200%200%200%201.033-.064l13-9a1%201%200%200%200%200-1.644l-13-9A1%201%200%200%200%205%203v18a1%201%200%200%200%20.536.886z'%3e%3c/path%3e%3c/svg%3e"
+                style="box-shadow: rgba(0, 0, 0, 0.2) 0px 0px 5px"
+                class="rounded-2xl p-1.5 transition-all hover:scale-110 active:scale-90"
+              />
+              <span class="text-xs text-blue-950">Watch Video</span>
+            </div>
+          </div>
+          <div class="grid grid-cols-3 grid-rows-1 gap-10 my-10 w-[90%] px-10">
+            <article
+              class="flex flex-col gap-3 items-center jusify-center flex-wrap text-center"
+            >
+              <img
+                src="/assets/face-Bdu-qjAO.svg"
+                alt="Face"
+                width="40"
+                class="bg-emerald-200 rounded-full p-1"
+              />
+              <span class="text-2xl text-blue-950 font-medium">15+</span>
+              <span class="text-gray-500 text-sm">Special Treatment</span>
+            </article>
+            <article
+              class="flex flex-col gap-3 items-center jusify-center flex-wrap text-center"
+            >
+              <img
+                src="/assets/lotus-DJdB4xYI.svg"
+                alt="Lotus"
+                width="40"
+                class="bg-emerald-200 rounded-full p-1"
+              />
+              <span class="text-2xl text-blue-950 font-medium">25+</span>
+              <span class="text-gray-500 text-sm">Professional Therapist</span>
+            </article>
+            <article
+              class="flex flex-col gap-3 items-center jusify-center flex-wrap text-center"
+            >
+              <img
+                src="/assets/mortar-DWaSRkT0.svg"
+                alt="Mortar"
+                width="40"
+                class="bg-emerald-200 rounded-full p-1"
+              />
+              <span class="text-2xl text-blue-950 font-medium">100%</span>
+              <span class="text-gray-500 text-sm">Herbal Cream Formula</span>
+            </article>
+          </div>
+        </div>
+      </main>
+      <div
+        id="bg"
+        class="fixed bg-custom w-[33%] h-[70%] top-0 right-0 -z-3 hidden md:block"
+      >
+        <img
+          src="data:image/svg+xml,%3c?xml%20version='1.0'%20standalone='no'?%3e%3c!DOCTYPE%20svg%20PUBLIC%20'-//W3C//DTD%20SVG%2020010904//EN'%20'http://www.w3.org/TR/2001/REC-SVG-20010904/DTD/svg10.dtd'%3e%3csvg%20version='1.0'%20xmlns='http://www.w3.org/2000/svg'%20width='473.000000pt'%20height='438.000000pt'%20viewBox='0%200%20473.000000%20438.000000'%20preserveAspectRatio='xMidYMid%20meet'%3e%3cg%20transform='translate(0.000000,438.000000)%20scale(0.100000,-0.100000)'%20fill='%2326404520'%20stroke='none'%3e%3cpath%20d='M2228%204237%20c-150%20-148%20-266%20-288%20-374%20-453%20-263%20-398%20-414%20-896%20-414%20-1362%200%20-79%20-3%20-142%20-7%20-140%20-5%202%20-73%2035%20-153%2075%20-174%2087%20-298%20133%20-474%20178%20-193%2049%20-333%2066%20-583%2072%20l-223%206%200%20-159%20c0%20-423%2072%20-762%20234%20-1099%20273%20-568%20733%20-985%201330%20-1206%20116%20-43%20282%20-85%20451%20-114%20139%20-24%20167%20-26%20380%20-22%20248%205%20333%2015%20545%2068%20309%2077%20581%20207%20845%20404%20495%20371%20824%20927%20920%201555%209%2059%2019%20208%2022%20339%20l6%20234%20-229%20-6%20c-325%20-9%20-507%20-39%20-774%20-129%20-96%20-33%20-298%20-124%20-431%20-195%20-3%20-2%20-9%2076%20-12%20174%20-10%20278%20-45%20475%20-133%20743%20-136%20413%20-381%20790%20-710%201094%20l-82%2076%20-134%20-133z%20m231%20-681%20c312%20-468%20427%20-1042%20319%20-1596%20-23%20-119%20-22%20-116%20-113%20-225%20-78%20-93%20-193%20-265%20-256%20-381%20l-43%20-81%20-58%20103%20c-75%20135%20-142%20234%20-247%20363%20l-85%20106%20-22%20107%20c-119%20577%2013%201194%20357%201661%2042%2058%2052%2067%2065%2056%208%20-7%2045%20-58%2083%20-113z%20m-1769%20-1478%20c628%20-151%201134%20-618%201341%20-1238%2040%20-122%2087%20-326%2076%20-336%20-10%20-10%20-211%2034%20-331%2072%20-210%2068%20-437%20192%20-611%20334%20-102%2084%20-259%20252%20-337%20361%20-77%20108%20-181%20304%20-232%20436%20-33%2087%20-89%20297%20-99%20375%20l-5%2036%2036%20-5%20c20%20-2%2093%20-18%20162%20-35z%20m3543%200%20c-11%20-92%20-75%20-314%20-123%20-432%20-215%20-523%20-675%20-935%20-1216%20-1089%20-110%20-31%20-262%20-62%20-270%20-54%20-11%2011%2036%20220%2077%20342%20178%20535%20585%20960%201118%201166%20111%2043%20300%2093%20413%20108%203%201%204%20-18%201%20-41z'/%3e%3c/g%3e%3c/svg%3e"
+          alt=""
+          class="fixed -z-2 right-45 top-15"
+          width="350"
+        />
+      </div>
+      <img
+        src="/assets/woman-BYfeTCEH.png"
+        alt=""
+        class="md:w-[9] md:h-full md:fixed top-0 right-20 -z-2"
+      />
+      <div id="testimonies">
+        <article
+          class="flex flex-col gap-1 md:fixed backdrop-blur-md z-3 top-60 right-10 bg-white/45 p-5 rounded-xl w-75"
+        >
+          <img src="data:image/svg+xml,%3csvg%20width='32'%20height='21'%20viewBox='0%200%2032%2021'%20fill='none'%20xmlns='http://www.w3.org/2000/svg'%3e%3cpath%20d='M10.1053%2021H0L9.51084%200H15.9505L10.1053%2021ZM26.1548%2021H16.0495L25.5604%200H32L26.1548%2021Z'%20fill='%23264065'/%3e%3c/svg%3e" alt="" class="z-0" width="20" />
+          <p class="flex flex-wrap text-sm">
+            I have a regular schedule to take treatment from GlowQueen, they
+            gave me the best service and treatment ever to maintain the beauty
+            and health of my skin
+          </p>
+          <strong class="font-bold text-sm text-blue-950"
+            >Sophia princeton</strong
+          >
+        </article>
+        <article
+          class="flex flex-col gap-1 md:fixed backdrop-blur-md z-3 top-110 right-50 bg-white/45 p-5 rounded-xl w-75"
+        >
+          <img src="data:image/svg+xml,%3csvg%20width='32'%20height='21'%20viewBox='0%200%2032%2021'%20fill='none'%20xmlns='http://www.w3.org/2000/svg'%3e%3cpath%20d='M10.1053%2021H0L9.51084%200H15.9505L10.1053%2021ZM26.1548%2021H16.0495L25.5604%200H32L26.1548%2021Z'%20fill='%23264065'/%3e%3c/svg%3e" alt="" class="z-0" width="20" />
+          <p class="flex flex-wrap text-sm">
+            For the past few years, I've had a hard time finding the right place
+            for skin care to deal with my complicated skin condition, thank God
+            I found GlowQueen to treat my skin
+          </p>
+          <strong class="font-bold text-sm text-blue-950">Tamara Jules</strong>
+        </article>
+      </div>
+    </header>
+  </body>
+</html>
